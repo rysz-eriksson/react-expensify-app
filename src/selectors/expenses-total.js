@@ -1,4 +1,5 @@
-export default (expArray) => {
-    const amountArray =  expArray.map((expense) => expense.amount)
-    return amountArray.reduce((acc, value) => acc + value, 0)
- };
+export default (expenses) => {
+  return expenses
+      .map((expense) => expense.amount)
+      .reduce((sum, value) => sum + value, 0);
+};
